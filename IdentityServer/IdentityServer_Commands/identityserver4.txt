@@ -1,0 +1,3 @@
+dotnet new -u IdentityServer4.Templates //identityserver4 varsa uninstall(kaldır) yapar. Eğer kurarken hata verirse bunu çalışırtır bir kere kaldır sonra aşağıdaki komut ile tekrar kur.
+dotnet new -i identityserver4 //identityserver4 şablonunu makinaya indirir ve kurar.
+dotnet new is4aspid --name MultiShop.IdentityServer //makinaya inen identityserver4 şablonu ile identity server projesi oluşturur.
