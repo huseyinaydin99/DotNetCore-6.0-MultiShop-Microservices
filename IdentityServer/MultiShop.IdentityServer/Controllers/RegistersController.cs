@@ -9,12 +9,13 @@ using static IdentityServer4.IdentityServerConstants;
 
 namespace MultiShop.IdentityServer.Controllers
 {
-    [AllowAnonymous]
+    [Authorize(LocalApi.PolicyName)]
     [Route("api/[controller]")]
     [ApiController]
     public class RegistersController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;
+
         public RegistersController(UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
@@ -31,14 +32,7 @@ namespace MultiShop.IdentityServer.Controllers
                 Surname = userRegisterDto.Surname
             };
             var result = await _userManager.CreateAsync(values, userRegisterDto.Password);
-            if (result.Succeeded)
-            {
-                return Created("","Kullanıcı başarıyla eklendi");
-            }
-            else
-            {
-                return Ok("Bir hata oluştu tekrar deneyiniz");
-            }
+            return result.Succeeded ? Created("", "Kullanıcı başarıyla eklendi") : Ok("Bir hata oluştu tekrar deneyiniz");
         }
     }
 }
