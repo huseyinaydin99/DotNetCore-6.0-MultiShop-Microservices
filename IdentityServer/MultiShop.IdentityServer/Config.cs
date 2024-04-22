@@ -2,6 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using IdentityServer4;
 using IdentityServer4.Models;
 using System.Collections.Generic;
 
@@ -9,50 +10,72 @@ namespace MultiShop.IdentityServer
 {
     public static class Config
     {
-        public static IEnumerable<IdentityResource> IdentityResources =>
-                   new IdentityResource[]
-                   {
-                new IdentityResources.OpenId(),
-                new IdentityResources.Profile(),
-                   };
+        public static IEnumerable<ApiResource> ApiResources => new ApiResource[]
+        {
+           new ApiResource("ResourceCatalog") { Scopes = {"CatalogFullPermission", "CatalogReadPermission"} },
+           new ApiResource("ResourceDiscount") { Scopes = {"DiscountFullPermission"} },
+           new ApiResource("ResourceOrder") { Scopes = {"OrderFullPermisson"} },
+           new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
+        };
 
-        public static IEnumerable<ApiScope> ApiScopes =>
-            new ApiScope[]
+        public static IEnumerable<IdentityResource> IdentityResources => new IdentityResource[]
+        {
+          new IdentityResources.OpenId(),
+          new IdentityResources.Profile(),
+          new IdentityResources.Email()
+        };
+
+        public static IEnumerable<ApiScope> ApiScopes => new ApiScope[]
+        {
+            new ApiScope("CatalogFullPermission", "Katalog operasyonları için full yetki."),
+            new ApiScope("CatalogReadPermission", "Katalog operasyonları için okuma yetkisi."),
+            new ApiScope("DiscountFullPermission", "İndirim operasyonları için full yetki."),
+            new ApiScope("OrderFullPermisson", "Sipariş operasyonları için full yetki."),
+            new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
+        };
+
+        public static IEnumerable<Client> Clients => new Client[]
+        {
+            //Visitor
+            new Client
             {
-                new ApiScope("scope1"),
-                new ApiScope("scope2"),
-            };
+                ClientId = "MultiShopVisitorId",
+                ClientName = "Multi Shop Visitor User",
+                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                ClientSecrets = { new Secret("multishopsecret".Sha256()) },
+                AllowedScopes = { "CatalogReadPermission",  IdentityServerConstants.LocalApi.ScopeName },
+                AllowAccessTokensViaBrowser = true
+            },
 
-        public static IEnumerable<Client> Clients =>
-            new Client[]
+            //Manager
+            new Client
             {
-                // m2m client credentials flow client
-                new Client
-                {
-                    ClientId = "m2m.client",
-                    ClientName = "Client Credentials Client",
+                ClientId = "MultiShopManagerId",
+                ClientName = "Multi Shop Manager User",
+                AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                ClientSecrets = { new Secret("multishopsecret".Sha256()) },
+                AllowedScopes = { "CatalogReadPermission", "CatalogFullPermission",
+                IdentityServerConstants.LocalApi.ScopeName,
+                IdentityServerConstants.StandardScopes.Email,
+                IdentityServerConstants.StandardScopes.OpenId,
+                IdentityServerConstants.StandardScopes.Profile }
+            },
 
-                    AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
-
-                    AllowedScopes = { "scope1" }
+            //Admin
+            new Client
+            {
+                ClientId = "MultiShopAdminId",
+                ClientName = "Multi Shop Admin User",
+                AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                ClientSecrets = { new Secret("multishopsecret".Sha256()) },
+                AllowedScopes = { "CatalogFullPermission", "CatalogReadPermission", "DiscountFullPermission", "OrderFullPermisson",
+                IdentityServerConstants.LocalApi.ScopeName,
+                IdentityServerConstants.StandardScopes.Email,
+                IdentityServerConstants.StandardScopes.OpenId,
+                IdentityServerConstants.StandardScopes.Profile
                 },
-
-                // interactive client using code flow + pkce
-                new Client
-                {
-                    ClientId = "interactive",
-                    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
-
-                    AllowedGrantTypes = GrantTypes.Code,
-
-                    RedirectUris = { "https://localhost:44300/signin-oidc" },
-                    FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                    PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
-
-                    AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "scope2" }
-                },
-            };
+                AccessTokenLifetime = 600
+            }
+        };
     }
 }
