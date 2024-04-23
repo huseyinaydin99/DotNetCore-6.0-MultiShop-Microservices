@@ -10,8 +10,4 @@
     <ProjectReference Include="..\MultiShop.Cargo.Entity\MultiShop.Cargo.Entity.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstracts\" />
-  </ItemGroup>
-
 </Project>

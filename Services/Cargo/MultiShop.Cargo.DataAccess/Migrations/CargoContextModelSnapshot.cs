@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MultiShop.Cargo.DataAccessLayer.Concretes;
+using MultiShop.Cargo.DataAccess.Concretes;
 
 #nullable disable
 
