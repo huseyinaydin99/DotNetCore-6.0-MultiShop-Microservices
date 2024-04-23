@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MultiShop.Cargo.DataAccess\MultiShop.Cargo.DataAccess.csproj" />
+    <ProjectReference Include="..\MultiShop.Cargo.Entity\MultiShop.Cargo.Entity.csproj" />
+  </ItemGroup>
+
 </Project>
