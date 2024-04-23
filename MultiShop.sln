@@ -43,6 +43,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer_Commands", "
 		..\..\identityserver4.txt = ..\..\identityserver4.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{BF47EB87-DB79-40C2-B8F2-F3BFBA0E02BF}"
+	ProjectSection(SolutionItems) = preProject
+		Requirements\IdentityServerVersionErrorSolution.txt = Requirements\IdentityServerVersionErrorSolution.txt
+		Requirements\PortainerCmd.txt = Requirements\PortainerCmd.txt
+		Requirements\PortNumbers.txt = Requirements\PortNumbers.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
