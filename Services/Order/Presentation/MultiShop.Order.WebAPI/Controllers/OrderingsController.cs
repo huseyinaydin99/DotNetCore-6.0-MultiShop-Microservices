@@ -8,6 +8,7 @@ using System.Security;
 
 namespace MultiShop.Order.WebApi.Controllers;
 
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class OrderingsController : ControllerBase
