@@ -32,6 +32,9 @@ builder.Services.AddSingleton<RedisService>(sp =>
 
 //Bu deðiþkene bir kullanýcýnýn zorunlu olmasý gerektiðini atadýk.
 var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+//BasketsController'in içinde var user = User.Claims; nesnesinde sub(kullanýcýnýn benzersiz Id'si) farklý þekilde eþlenmiþ olarak geliyor.
+//Bu durum sub nesnesini kullanýrken sýkýntý çýkarabilir.
+//Kullanýcýnýn sub bilgisi gelirken uzun ifadeyi yok ederek sadece sub'ýn gelmesini saðlýyor.
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 
 builder.Services.AddControllers(opt =>
