@@ -40,5 +40,4 @@ public class SpecialOfferService: ISpecialOfferService
     {
         await _httpClient.PutAsJsonAsync<UpdateSpecialOfferDto>("specialoffers", updateSpecialOfferDto);
     }
-
 }
