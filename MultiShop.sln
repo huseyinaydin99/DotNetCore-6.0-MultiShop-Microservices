@@ -45,6 +45,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer_Commands", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{BF47EB87-DB79-40C2-B8F2-F3BFBA0E02BF}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\FontAwesomeLink.txt = ..\..\FontAwesomeLink.txt
 		Requirements\IdentityServerVersionErrorSolution.txt = Requirements\IdentityServerVersionErrorSolution.txt
 		Requirements\PortainerCmd.txt = Requirements\PortainerCmd.txt
 		Requirements\PortNumbers.txt = Requirements\PortNumbers.txt
@@ -64,11 +65,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.WebAPI", "S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{B133FF96-CF3A-4634-B255-2071B3ADA567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Basket", "Services\Basket\MultiShop.Basket.WebAPI\MultiShop.Basket.csproj", "{7D3112D2-E52B-4472-BA85-7E03287AEB97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Basket", "Services\Basket\MultiShop.Basket.WebAPI\MultiShop.Basket.csproj", "{7D3112D2-E52B-4472-BA85-7E03287AEB97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{C1A67832-0CCE-4000-ABB1-217E001234C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.WebUI", "Frontends\MultiShop.WebUI\MultiShop.WebUI.csproj", "{10158D48-6544-4B27-B27E-57E4690D8B40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.WebUI", "Frontends\MultiShop.WebUI\MultiShop.WebUI.csproj", "{10158D48-6544-4B27-B27E-57E4690D8B40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.DTO", "Frontends\MultiShop.Dto\MultiShop.DTO.csproj", "{27001ED1-7DB3-42A5-BD0F-6FEE5E20647F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -132,6 +135,10 @@ Global
 		{10158D48-6544-4B27-B27E-57E4690D8B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10158D48-6544-4B27-B27E-57E4690D8B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10158D48-6544-4B27-B27E-57E4690D8B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27001ED1-7DB3-42A5-BD0F-6FEE5E20647F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27001ED1-7DB3-42A5-BD0F-6FEE5E20647F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27001ED1-7DB3-42A5-BD0F-6FEE5E20647F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27001ED1-7DB3-42A5-BD0F-6FEE5E20647F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +167,7 @@ Global
 		{B133FF96-CF3A-4634-B255-2071B3ADA567} = {F357078E-998E-43F6-9C3A-C5D95C9750AB}
 		{7D3112D2-E52B-4472-BA85-7E03287AEB97} = {B133FF96-CF3A-4634-B255-2071B3ADA567}
 		{10158D48-6544-4B27-B27E-57E4690D8B40} = {C1A67832-0CCE-4000-ABB1-217E001234C4}
+		{27001ED1-7DB3-42A5-BD0F-6FEE5E20647F} = {C1A67832-0CCE-4000-ABB1-217E001234C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1818AB1-DE31-40C1-BEFB-1DF430FA4B10}
