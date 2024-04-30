@@ -49,6 +49,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 		Requirements\IdentityServerVersionErrorSolution.txt = Requirements\IdentityServerVersionErrorSolution.txt
 		Requirements\PortainerCmd.txt = Requirements\PortainerCmd.txt
 		Requirements\PortNumbers.txt = Requirements\PortNumbers.txt
+		..\..\SimpleCode.txt = ..\..\SimpleCode.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{F3DDA63B-2DBE-4149-A6DB-3F9F95ED0D15}"

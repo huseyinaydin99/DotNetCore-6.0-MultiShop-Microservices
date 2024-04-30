@@ -3,7 +3,14 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
+
+<style type="text/css">
+    a[disabled="disabled"] {
+        pointer-events: none;
+    }
+</style>
 
 <section class="content container-fluid">
     <div class="row">
@@ -23,6 +30,7 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
+                                count++;
                                 <tr>
                                     <td>@item.Title</td>
                                     <td>@item.SubTitle</td>
@@ -32,12 +40,16 @@
                             }
                         </tbody>
                     </table>
-                    <a href="/Admin/OfferDiscount/CreateOfferDiscount/" class="btn btn-primary">Yeni İndirim Teklifi Girişi</a>
+                    @if (count < 2)
+                    {
+                        <a href="/Admin/OfferDiscount/CreateOfferDiscount/" class="btn btn-primary">Yeni İndirim Teklifi Girişi</a>
+                    }
+                    else if(count >= 2)
+                    {
+                        <a href="javascript:function() { return false; }" class="btn btn-primary">Yeni İndirim Teklifi Girişi</a>
+                    }
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </section>
