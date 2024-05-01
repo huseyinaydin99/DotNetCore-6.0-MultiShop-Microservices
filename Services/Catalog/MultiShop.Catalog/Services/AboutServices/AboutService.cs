@@ -36,7 +36,7 @@ public class AboutService : IAboutService
         return _mapper.Map<GetByIdAboutDTO>(values);
     }
 
-    public async Task<List<ResultAboutDTO>> GettAllAboutAsync()
+    public async Task<List<ResultAboutDTO>> GetAllAboutAsync()
     {
         var values = await _aboutCollection.Find(x => true).ToListAsync();
         return _mapper.Map<List<ResultAboutDTO>>(values);

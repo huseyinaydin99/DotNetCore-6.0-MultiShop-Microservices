@@ -4,7 +4,7 @@ namespace MultiShop.Catalog.Services.AboutServices;
 
 public interface IAboutService
 {
-    Task<List<ResultAboutDTO>> GettAllAboutAsync();
+    Task<List<ResultAboutDTO>> GetAllAboutAsync();
     Task CreateAboutAsync(CreateAboutDTO createAboutDTO);
     Task UpdateAboutAsync(UpdateAboutDTO updateAboutDTO);
     Task DeleteAboutAsync(string id);
