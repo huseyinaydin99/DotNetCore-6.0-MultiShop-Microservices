@@ -42,7 +42,7 @@ public class ProductImageService : IProductImageService
         return _mapper.Map<GetByIdProductImageDTO>(values);
     }
 
-    public async Task<List<ResultProductImageDTO>> GettAllProductImageAsync()
+    public async Task<List<ResultProductImageDTO>> GetAllProductImageAsync()
     {
         var values = await _productImageCollection.Find(x => true).ToListAsync();
         return _mapper.Map<List<ResultProductImageDTO>>(values);

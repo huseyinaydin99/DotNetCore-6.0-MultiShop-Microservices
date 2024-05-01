@@ -12,6 +12,7 @@ namespace MultiShop.Catalog.Controllers;
 public class ProductsController : ControllerBase
 {
     private readonly IProductService _productService;
+
     public ProductsController(IProductService ProductService)
     {
         _productService = ProductService;
@@ -20,7 +21,7 @@ public class ProductsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> ProductList()
     {
-        var values = await _productService.GettAllProductAsync();
+        var values = await _productService.GetAllProductAsync();
         return Ok(values);
     }
 

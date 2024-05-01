@@ -11,6 +11,7 @@ namespace MultiShop.Catalog.Controllers;
 public class ProductDetailsController : ControllerBase
 {
     private readonly IProductDetailService _productDetailService;
+
     public ProductDetailsController(IProductDetailService ProductDetailService)
     {
         _productDetailService = ProductDetailService;
@@ -19,7 +20,7 @@ public class ProductDetailsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> ProductDetailList()
     {
-        var values = await _productDetailService.GettAllProductDetailAsync();
+        var values = await _productDetailService.GetAllProductDetailAsync();
         return Ok(values);
     }
 

@@ -59,7 +59,7 @@ public class ProductService : IProductService
         return _mapper.Map<List<ResultProductsWithCategoryDTO>>(values);
     }
 
-    public async Task<List<ResultProductDTO>> GettAllProductAsync()
+    public async Task<List<ResultProductDTO>> GetAllProductAsync()
     {
         var values = await _productCollection.Find(x => true).ToListAsync();
         return _mapper.Map<List<ResultProductDTO>>(values);

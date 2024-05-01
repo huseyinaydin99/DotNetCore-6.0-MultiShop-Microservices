@@ -20,7 +20,7 @@ public class ProductImagesController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> ProductImageList()
     {
-        var values = await _productImageService.GettAllProductImageAsync();
+        var values = await _productImageService.GetAllProductImageAsync();
         return Ok(values);
     }
 

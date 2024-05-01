@@ -21,7 +21,7 @@ public class AboutsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> AboutList()
     {
-        var values = await _aboutService.GettAllAboutAsync();
+        var values = await _aboutService.GetAllAboutAsync();
         return Ok(values);
     }
 

@@ -41,11 +41,12 @@ public class ProductDetailService : IProductDetailService
         return _mapper.Map<GetByIdProductDetailDTO>(values);
     }
 
-    public async Task<List<ResultProductDetailDTO>> GettAllProductDetailAsync()
+    public async Task<List<ResultProductDetailDTO>> GetAllProductDetailAsync()
     {
         var values = await _productDetailCollection.Find(x => true).ToListAsync();
         return _mapper.Map<List<ResultProductDetailDTO>>(values);
     }
+
     public async Task UpdateProductDetailAsync(UpdateProductDetailDTO updateProductDetailDTO)
     {
         var values = _mapper.Map<ProductDetail>(updateProductDetailDTO);
