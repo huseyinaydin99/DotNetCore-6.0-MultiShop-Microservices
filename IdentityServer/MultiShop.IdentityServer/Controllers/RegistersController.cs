@@ -7,32 +7,31 @@ using MultiShop.IdentityServer.Models;
 using System.Threading.Tasks;
 using static IdentityServer4.IdentityServerConstants;
 
-namespace MultiShop.IdentityServer.Controllers
+namespace MultiShop.IdentityServer.Controllers;
+
+[Authorize(LocalApi.PolicyName)]
+[Route("api/[controller]")]
+[ApiController]
+public class RegistersController : ControllerBase
 {
-    [Authorize(LocalApi.PolicyName)]
-    [Route("api/[controller]")]
-    [ApiController]
-    public class RegistersController : ControllerBase
+    private readonly UserManager<ApplicationUser> _userManager;
+
+    public RegistersController(UserManager<ApplicationUser> userManager)
     {
-        private readonly UserManager<ApplicationUser> _userManager;
+        _userManager = userManager;
+    }
 
-        public RegistersController(UserManager<ApplicationUser> userManager)
+    [HttpPost]
+    public async Task<IActionResult> UserRegister(UserRegisterDTO userRegisterDto)
+    {
+        var values = new ApplicationUser()
         {
-            _userManager = userManager;
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> UserRegister(UserRegisterDTO userRegisterDto)
-        {
-            var values = new ApplicationUser()
-            {
-                UserName = userRegisterDto.Username,
-                Email = userRegisterDto.Email,
-                Name = userRegisterDto.Name,
-                Surname = userRegisterDto.Surname
-            };
-            var result = await _userManager.CreateAsync(values, userRegisterDto.Password);
-            return result.Succeeded ? Created("", "Kullanıcı başarıyla eklendi") : Ok("Bir hata oluştu tekrar deneyiniz");
-        }
+            UserName = userRegisterDto.Username,
+            Email = userRegisterDto.Email,
+            Name = userRegisterDto.Name,
+            Surname = userRegisterDto.Surname
+        };
+        var result = await _userManager.CreateAsync(values, userRegisterDto.Password);
+        return result.Succeeded ? Created("", "Kullanıcı başarıyla eklendi") : Ok("Bir hata oluştu tekrar deneyiniz");
     }
 }
