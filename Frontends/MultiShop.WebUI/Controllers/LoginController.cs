@@ -15,10 +15,12 @@ namespace MultiShop.WebUI.Controllers;
 public class LoginController : Controller
 {
     private readonly IHttpClientFactory _httpClientFactory;
-    
-    public LoginController(IHttpClientFactory httpClientFactory)
+    private readonly IIdentityService _identityService;
+
+    public LoginController(IHttpClientFactory httpClientFactory, IIdentityService identityService)
     {
         _httpClientFactory = httpClientFactory;
+        _identityService = identityService;
     }
 
     [HttpGet]
@@ -30,7 +32,7 @@ public class LoginController : Controller
     [HttpPost]
     public async Task<IActionResult> Index(SignInDto signInDto)
     {
-        
+        await _identityService.SignIn(signInDto);
         return RedirectToAction("Index", "User");
     }
 }
