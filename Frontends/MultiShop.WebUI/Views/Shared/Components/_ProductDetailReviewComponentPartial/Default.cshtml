@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-6">
             <h4 class="mb-4">@Model.Count yorum bulunmaktadır</h4>
-            @foreach(var item in Model)
+            @foreach (var item in Model)
             {
                 <div class="media mb-4">
                     <img src="@item.ImageUrl" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
@@ -54,8 +54,8 @@
                     </div>
                 </div>
             }
-            
+
         </div>
-        @await Html.PartialAsync("~/Views/ProductList/AddComment.cshtml",new {id=ViewBag.x})
+        @await Html.PartialAsync("~/Views/ProductList/AddComment.cshtml", new { id = ViewBag.x })
     </div>
 </div>

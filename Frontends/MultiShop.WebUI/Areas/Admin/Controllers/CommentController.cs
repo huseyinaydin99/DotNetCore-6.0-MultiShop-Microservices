@@ -17,6 +17,7 @@ public class CommentController : Controller
     {
         _httpClientFactory = httpClientFactory;
     }
+
     [Route("Index")]
     public async Task<IActionResult> Index()
     {
