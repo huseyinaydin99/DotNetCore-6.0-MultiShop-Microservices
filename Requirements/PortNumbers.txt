@@ -5,6 +5,7 @@ Discount -->  7002
 Order    -->  7003
 Cargo    -->  7004
 Basket   -->  7005
-Comment  -->  7006
-Payment  -->  7007
-Images   -->  7008
+Message  -->  7006
+Comment  -->  7007
+Payment  -->  7008
+Images   -->  7009

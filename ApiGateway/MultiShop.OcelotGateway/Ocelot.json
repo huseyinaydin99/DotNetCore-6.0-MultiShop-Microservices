@@ -7,7 +7,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7070
+          "Port": 7001
         }
       ],
       "UpstreamPathTemplate": "/services/catalog/{everything}",
@@ -27,7 +27,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7071
+          "Port": 7002
         }
       ],
       "UpstreamPathTemplate": "/services/discount/{everything}",
@@ -47,7 +47,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7072
+          "Port": 7003
         }
       ],
       "UpstreamPathTemplate": "/services/order/{everything}",
@@ -67,7 +67,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7073
+          "Port": 7004
         }
       ],
       "UpstreamPathTemplate": "/services/cargo/{everything}",
@@ -87,7 +87,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7074
+          "Port": 7005
         }
       ],
       "UpstreamPathTemplate": "/services/basket/{everything}",
@@ -107,7 +107,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7078
+          "Port": 7006
         }
       ],
       "UpstreamPathTemplate": "/services/message/{everything}",
@@ -127,7 +127,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7075
+          "Port": 7007
         }
       ],
       "UpstreamPathTemplate": "/services/comment/{everything}",
@@ -147,7 +147,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7076
+          "Port": 7008
         }
       ],
       "UpstreamPathTemplate": "/services/payment/{everything}",
@@ -167,7 +167,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7077
+          "Port": 7009
         }
       ],
       "UpstreamPathTemplate": "/services/images/{everything}",
