@@ -47,6 +47,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 	ProjectSection(SolutionItems) = preProject
 		..\..\FontAwesomeLink.txt = ..\..\FontAwesomeLink.txt
 		Requirements\IdentityServerVersionErrorSolution.txt = Requirements\IdentityServerVersionErrorSolution.txt
+		..\..\OcelotLink.txt = ..\..\OcelotLink.txt
 		Requirements\PortainerCmd.txt = Requirements\PortainerCmd.txt
 		Requirements\PortNumbers.txt = Requirements\PortNumbers.txt
 		..\..\SimpleCode.txt = ..\..\SimpleCode.txt
@@ -78,6 +79,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comment", "Comment", "{C4993BEF-E2B9-41F5-9181-57B756E4EC9E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Comment", "Services\Comment\MultiShop.Comment\MultiShop.Comment.csproj", "{45728A1E-15C5-4CF3-B6DF-67F86897334C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{15CB4C17-DD79-440E-877A-DE9B7FA9873A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{2CACF7E7-E250-4997-8091-B5DF64008FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.OcelotGateway", "ApiGateway\MultiShop.OcelotGateway\MultiShop.OcelotGateway.csproj", "{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +156,10 @@ Global
 		{45728A1E-15C5-4CF3-B6DF-67F86897334C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45728A1E-15C5-4CF3-B6DF-67F86897334C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45728A1E-15C5-4CF3-B6DF-67F86897334C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -180,6 +191,7 @@ Global
 		{27001ED1-7DB3-42A5-BD0F-6FEE5E20647F} = {C1A67832-0CCE-4000-ABB1-217E001234C4}
 		{C4993BEF-E2B9-41F5-9181-57B756E4EC9E} = {F357078E-998E-43F6-9C3A-C5D95C9750AB}
 		{45728A1E-15C5-4CF3-B6DF-67F86897334C} = {C4993BEF-E2B9-41F5-9181-57B756E4EC9E}
+		{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4} = {15CB4C17-DD79-440E-877A-DE9B7FA9873A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1818AB1-DE31-40C1-BEFB-1DF430FA4B10}
