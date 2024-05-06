@@ -47,6 +47,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 	ProjectSection(SolutionItems) = preProject
 		..\..\FontAwesomeLink.txt = ..\..\FontAwesomeLink.txt
 		Requirements\IdentityServerVersionErrorSolution.txt = Requirements\IdentityServerVersionErrorSolution.txt
+		..\..\OcelotCodeExample.txt = ..\..\OcelotCodeExample.txt
 		..\..\OcelotLink.txt = ..\..\OcelotLink.txt
 		Requirements\PortainerCmd.txt = Requirements\PortainerCmd.txt
 		Requirements\PortNumbers.txt = Requirements\PortNumbers.txt
