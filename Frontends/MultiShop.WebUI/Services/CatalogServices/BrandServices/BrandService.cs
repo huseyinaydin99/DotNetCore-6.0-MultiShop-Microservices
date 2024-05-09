@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace MultiShop.WebUI.Services.CatalogServices.BrandServices;
 
-public class BrandService:IBrandService
+public class BrandService : IBrandService
 {
     private readonly HttpClient _httpClient;
 
