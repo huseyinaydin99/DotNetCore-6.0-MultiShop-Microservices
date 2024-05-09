@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace MultiShop.WebUI.Services.CatalogServices.ProductImageServices;
 
-public class ProductImageService:IProductImageService
+public class ProductImageService : IProductImageService
 {
     private readonly HttpClient _httpClient;
 
