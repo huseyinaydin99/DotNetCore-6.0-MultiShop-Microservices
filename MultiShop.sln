@@ -45,10 +45,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer_Commands", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{BF47EB87-DB79-40C2-B8F2-F3BFBA0E02BF}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\Card.txt = ..\..\Card.txt
+		..\..\Card2.txt = ..\..\Card2.txt
 		..\..\FontAwesomeLink.txt = ..\..\FontAwesomeLink.txt
 		Requirements\IdentityServerVersionErrorSolution.txt = Requirements\IdentityServerVersionErrorSolution.txt
 		..\..\OcelotCodeExample.txt = ..\..\OcelotCodeExample.txt
 		..\..\OcelotLink.txt = ..\..\OcelotLink.txt
+		..\..\OrderHtml.txt = ..\..\OrderHtml.txt
 		Requirements\PortainerCmd.txt = Requirements\PortainerCmd.txt
 		Requirements\PortNumbers.txt = Requirements\PortNumbers.txt
 		..\..\SimpleCode.txt = ..\..\SimpleCode.txt
@@ -85,15 +88,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{2CACF7E7-E250-4997-8091-B5DF64008FF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.OcelotGateway", "ApiGateway\MultiShop.OcelotGateway\MultiShop.OcelotGateway.csproj", "{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.OcelotGateway", "ApiGateway\MultiShop.OcelotGateway\MultiShop.OcelotGateway.csproj", "{00F1DB4F-88DC-4E64-812A-2CF96ACB4FB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{2FBD8FF2-12D4-4084-9053-9E741EE314DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Payment", "Services\Payment\MultiShop.Payment\MultiShop.Payment.csproj", "{DD9ADB98-85D5-4101-BA7E-E6AA3318CA59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Payment", "Services\Payment\MultiShop.Payment\MultiShop.Payment.csproj", "{DD9ADB98-85D5-4101-BA7E-E6AA3318CA59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{358F1DF7-A5AE-4883-8AFA-6227B50A04DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Images", "Services\Images\MultiShop.Images\MultiShop.Images.csproj", "{815CD8BD-B37A-4EB2-B1E8-5DC99F34401D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Images", "Services\Images\MultiShop.Images\MultiShop.Images.csproj", "{815CD8BD-B37A-4EB2-B1E8-5DC99F34401D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

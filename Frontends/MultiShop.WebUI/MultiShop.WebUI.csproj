@@ -23,11 +23,21 @@
 		<PackageReference Include="IdentityModel.AspNetCore" Version="3.0.0" />
 		<PackageReference Include="IdentityServer4.Storage" Version="4.1.2" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.29" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.26">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\Services\Order\Infrastructure\Persistence\MultiShop.Order.Persistence.csproj" />
 		<ProjectReference Include="..\MultiShop.Dto\MultiShop.DTO.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Areas\User\Data\" />
+	  <Folder Include="Areas\User\Models\" />
 	</ItemGroup>
 
 </Project>
