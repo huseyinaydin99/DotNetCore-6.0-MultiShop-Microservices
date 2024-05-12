@@ -2,7 +2,7 @@
 
 namespace MultiShop.WebUI.Areas.User.ViewComponents.UserLayoutViewComponents;
 
-public class _UserLayoutNavbarComponentPartial : ViewComponent
+public class _UserLayoutSideBarComponentPartial : ViewComponent
 {
     public IViewComponentResult Invoke()
     {
