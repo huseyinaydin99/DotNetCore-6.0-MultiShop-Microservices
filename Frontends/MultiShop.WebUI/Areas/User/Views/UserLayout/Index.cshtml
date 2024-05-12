@@ -1,16 +1,15 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
+@await Component.InvokeAsync("_UserLayoutHeadComponentPartial")
+
 <body>
-    @RenderBody()
+    
+
 </body>
+
 </html>
