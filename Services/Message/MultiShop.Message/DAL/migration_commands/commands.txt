@@ -1,0 +1,2 @@
+﻿add-migration mig_1
+update-database
