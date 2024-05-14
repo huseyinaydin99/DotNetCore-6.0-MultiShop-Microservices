@@ -4,6 +4,7 @@ using MultiShop.WebUI.Services.MessageServices;
 
 namespace MultiShop.WebUI.Areas.User.Controllers;
 
+[Area("User")]
 public class MessageController : Controller
 {
     private readonly IMessageService _messageService;
