@@ -3,6 +3,7 @@ using MultiShop.Message.DAL.Context;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using MultiShop.Message.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<MessageContext>(opt =>
     opt.UseNpgsql(connectionString);
 });
 
+builder.Services.AddScoped<IUserMessageService, UserMessageService>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 builder.Services.AddControllers();
