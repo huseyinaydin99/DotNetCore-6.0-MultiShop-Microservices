@@ -28,13 +28,15 @@
                                     {
 
                                         count++;
-                                        if (count == 1) { tableRowColor = "table-info"; }
+                                        /*if (count == 1) { tableRowColor = "table-info"; }
                                         if (count == 2) { tableRowColor = "table-warning"; }
                                         if (count == 3) { tableRowColor = "table-danger"; }
                                         if (count == 4) { tableRowColor = "table-success"; }
                                         if (count == 5) { tableRowColor = "table-primary"; }
                                         if (count == 6) { tableRowColor = "table-dark"; }
-                                        if (count == 7) { tableRowColor = "table-secondary"; }
+                                        if (count == 7) { tableRowColor = "table-secondary"; }*/
+                                        if (count % 2 == 0) { tableRowColor = "table-info"; }
+                                        else { tableRowColor = "table-dark"; }
                                         <tr class="@tableRowColor">
                                             <th>@count</th>
                                             <td>@item.TotalPrice</td>
