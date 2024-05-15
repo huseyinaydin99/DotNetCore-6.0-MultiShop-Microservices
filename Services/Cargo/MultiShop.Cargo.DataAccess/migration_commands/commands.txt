@@ -1,2 +1,6 @@
 ﻿add-migration mig1
 update-database
+
+//2.
+PM> add-migration mig2
+PM> update-database
