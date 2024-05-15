@@ -10,4 +10,5 @@ namespace MultiShop.Cargo.Business.Abstracts;
 
 public interface ICargoCustomerService : IGenericService<CargoCustomer>
 {
+    CargoCustomer TGetCargoCustomerById(string id);
 }

@@ -33,6 +33,11 @@ public class CargoCustomerManager : ICargoCustomerService
         return _cargoCustomerDal.GetById(id);
     }
 
+    public CargoCustomer TGetCargoCustomerById(string id)
+    {
+        return _cargoCustomerDal.GetCargoCustomerById(id);
+    }
+
     public void TInsert(CargoCustomer entity)
     {
         _cargoCustomerDal.Insert(entity);
