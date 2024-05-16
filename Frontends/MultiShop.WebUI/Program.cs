@@ -21,6 +21,7 @@ using MultiShop.WebUI.Services.DiscountServices;
 using MultiShop.WebUI.Services.Interfaces;
 using MultiShop.WebUI.Services.MessageServices;
 using MultiShop.WebUI.Services.OrderServices.OrderOderingServices;
+using MultiShop.WebUI.Services.StatisticService.CatalogStatisticService;
 using MultiShop.WebUI.Services.UserIdentityServices;
 using MultiShop.WebUI.Settings;
 
@@ -64,6 +65,11 @@ builder.Services.AddScoped<ClientCredentialTokenHandler>();
 
 var values = builder.Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 builder.Services.AddHttpClient<IUserService, UserService>(opt =>
+{
+    opt.BaseAddress = new Uri(values.IdentityServerUrl);
+}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+builder.Services.AddHttpClient<ICatalogStatisticService, CatalogStatisticService>(opt =>
 {
     opt.BaseAddress = new Uri(values.IdentityServerUrl);
 }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
