@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 
-namespace MultiShop.Catalog.Entites;
+namespace MultiShop.Catalog.Entities;
 
 public class Brand
 {
