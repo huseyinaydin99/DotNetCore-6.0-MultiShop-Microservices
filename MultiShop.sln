@@ -45,6 +45,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer_Commands", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{BF47EB87-DB79-40C2-B8F2-F3BFBA0E02BF}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\AdminStatisticApiForUI.txt = ..\..\AdminStatisticApiForUI.txt
 		..\..\Card.txt = ..\..\Card.txt
 		..\..\Card2.txt = ..\..\Card2.txt
 		..\..\FontAwesomeLink.txt = ..\..\FontAwesomeLink.txt
@@ -100,7 +101,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Images", "Service
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message", "Message", "{5A19C558-E03C-4554-88CC-E354BCE12EB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Message", "Services\Message\MultiShop.Message\MultiShop.Message.csproj", "{BF922DC8-DD77-452F-9E82-6BAC52A241E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Message", "Services\Message\MultiShop.Message\MultiShop.Message.csproj", "{BF922DC8-DD77-452F-9E82-6BAC52A241E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
