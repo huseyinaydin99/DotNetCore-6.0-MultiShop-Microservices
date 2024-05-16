@@ -61,4 +61,10 @@ public class UserMessageService : IUserMessageService
         _messageContext.UserMessages.Update(values);
         await _messageContext.SaveChangesAsync();
     }
+
+    public async Task<int> GetTotalMessageCount()
+    {
+        int values = await _messageContext.UserMessages.CountAsync();
+        return values;
+    }
 }
