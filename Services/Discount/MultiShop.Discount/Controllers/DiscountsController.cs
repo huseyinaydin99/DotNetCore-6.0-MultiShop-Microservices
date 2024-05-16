@@ -12,6 +12,7 @@ namespace MultiShop.Discount.Controllers;
 public class DiscountsController : ControllerBase
 {
     private readonly IDiscountService _discountService;
+
     public DiscountsController(IDiscountService discountService)
     {
         _discountService = discountService;
@@ -63,6 +64,13 @@ public class DiscountsController : ControllerBase
     public IActionResult GetDiscountCouponCountRate(string code)
     {
         var values = _discountService.GetDiscountCouponCountRate(code);
+        return Ok(values);
+    }
+
+    [HttpGet("GetDiscountCouponCount")]
+    public async Task<IActionResult> GetDiscountCouponCount()
+    {
+        var values = await _discountService.GetDiscountCouponCount();
         return Ok(values);
     }
 }
