@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUI.Controllers
+namespace MultiShop.WebUI.Controllers;
+
+public class UILayoutController : Controller
 {
-    public class UILayoutController : Controller
+    public IActionResult _UILayout()
     {
-        public IActionResult _UILayout()
-        {
-            return View();
-        }
+        return View();
     }
 }

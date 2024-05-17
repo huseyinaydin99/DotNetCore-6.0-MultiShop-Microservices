@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MultiShop.WebUI.ViewComponents.ShoppingCartViewComponents
+namespace MultiShop.WebUI.ViewComponents.ShoppingCartViewComponents;
+
+public class _ShoppingCartDiscountCouponComponentPartial : ViewComponent
 {
-    public class _ShoppingCartDiscountCouponComponentPartial : ViewComponent
+    public IViewComponentResult Invoke()
     {
-        public IViewComponentResult Invoke()
-        {
-            return View();
-        }
+        return View();
     }
 }

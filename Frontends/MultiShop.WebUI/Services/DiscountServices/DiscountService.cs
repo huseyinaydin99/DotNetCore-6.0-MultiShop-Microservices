@@ -13,14 +13,14 @@ public class DiscountService : IDiscountService
 
     public async Task<GetDiscountCodeDetailByCode> GetDiscountCode(string code)
     {
-        var responseMessage = await _httpClient.GetAsync("http://localhost:7071/api/Discounts/GetCodeDetailByCodeAsync?code=" + code);
+        var responseMessage = await _httpClient.GetAsync("http://localhost:7002/api/Discounts/GetCodeDetailByCodeAsync?code=" + code);
         var values = await responseMessage.Content.ReadFromJsonAsync<GetDiscountCodeDetailByCode>();
         return values;
     }
 
     public async Task<int> GetDiscountCouponCountRate(string code)
     {
-        var responseMessage = await _httpClient.GetAsync("http://localhost:7071/api/Discounts/GetDiscountCouponCountRate?code=" + code);
+        var responseMessage = await _httpClient.GetAsync("http://localhost:7002/api/Discounts/GetDiscountCouponCountRate?code=" + code);
         var values = await responseMessage.Content.ReadFromJsonAsync<int>();
         return values;
     }

@@ -45,7 +45,7 @@ public class ProductController : Controller
         ProductViewBagList();
 
         //var client = _httpClientFactory.CreateClient();
-        //var responseMessage = await client.GetAsync("https://localhost:7070/api/Products/ProductListWithCategory");
+        //var responseMessage = await client.GetAsync("https://localhost:7001/api/Products/ProductListWithCategory");
         //if (responseMessage.IsSuccessStatusCode)
         //{
         //    var jsonData = await responseMessage.Content.ReadAsStringAsync();

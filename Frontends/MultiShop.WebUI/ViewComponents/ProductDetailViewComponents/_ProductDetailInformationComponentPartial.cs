@@ -16,7 +16,6 @@ public class _ProductDetailInformationComponentPartial : ViewComponent
 
     public async Task<IViewComponentResult> InvokeAsync(string id)
     {
-
         var values = await _productDetailService.GetByProductIdProductDetailAsync(id);
         return View(values);
     }

@@ -1,7 +1,7 @@
 ﻿@model List<ResultSpecialOfferDto>
 
 <div class="col-lg-4">
-    
+    @if(Model != null)
     @foreach(var item in Model)
     {
         <div class="product-offer mb-30" style="height: 200px;">
