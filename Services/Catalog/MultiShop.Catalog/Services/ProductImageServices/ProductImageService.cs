@@ -38,7 +38,9 @@ public class ProductImageService : IProductImageService
 
     public async Task<GetByIdProductImageDTO> GetByProductIdProductImageAsync(string id)
     {
-        var values = await _productImageCollection.Find(x => x.ProductId == id).FirstOrDefaultAsync();
+        string mesaj = "selamlar";
+        var values = await _productImageCollection.Find<ProductImage>(x => x.ProductId == id).FirstOrDefaultAsync();
+        string merhaba = "selamlar";
         return _mapper.Map<GetByIdProductImageDTO>(values);
     }
 

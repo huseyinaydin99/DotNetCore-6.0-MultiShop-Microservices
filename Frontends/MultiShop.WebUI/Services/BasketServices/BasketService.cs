@@ -23,6 +23,7 @@ public class BasketService : IBasketService
             else
             {
                 values = new BasketTotalDto();
+                values.BasketItems = new List<BasketItemDto>();
                 values.BasketItems.Add(basketItemDto);
             }
         }

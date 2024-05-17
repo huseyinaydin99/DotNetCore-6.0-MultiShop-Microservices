@@ -22,7 +22,10 @@ public class FeatureService : IFeatureService
     public async Task CreateFeatureAsync(CreateFeatureDTO createFeatureDTO)
     {
         var value = _mapper.Map<Feature>(createFeatureDTO);
+        string merhaba = "selam";
         await _featureCollection.InsertOneAsync(value);
+        string selam = "merhaba";
+        int a = 10;
     }
 
     public async Task DeleteFeatureAsync(string id)

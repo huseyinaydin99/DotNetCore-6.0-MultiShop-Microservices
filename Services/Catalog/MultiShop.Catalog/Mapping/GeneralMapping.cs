@@ -3,6 +3,7 @@ using MultiShop.Catalog.DTOs.AboutDTOs;
 using MultiShop.Catalog.DTOs.BrandDTOs;
 using MultiShop.Catalog.DTOs.CategoryDTOs;
 using MultiShop.Catalog.DTOs.ContactDTOs;
+using MultiShop.Catalog.DTOs.FeatureDTOs;
 using MultiShop.Catalog.DTOs.FeatureSliderDTOs;
 using MultiShop.Catalog.DTOs.OfferDiscountDTOs;
 using MultiShop.Catalog.DTOs.ProductDetailDTOs;
@@ -49,6 +50,11 @@ public class GeneralMapping : Profile
         CreateMap<SpecialOffer, CreateSpecialOfferDTO>().ReverseMap();
         CreateMap<SpecialOffer, UpdateSpecialOfferDTO>().ReverseMap();
         CreateMap<SpecialOffer, GetByIdSpecialOfferDTO>().ReverseMap();
+
+        CreateMap<Feature, ResultFeatureDTO>().ReverseMap();
+        CreateMap<Feature, CreateFeatureDTO>().ReverseMap();
+        CreateMap<Feature, UpdateFeatureDTO>().ReverseMap();
+        CreateMap<Feature, GetByIdFeatureDTO>().ReverseMap();
 
         CreateMap<OfferDiscount, ResultOfferDiscountDTO>().ReverseMap();
         CreateMap<OfferDiscount, CreateOfferDiscountDTO>().ReverseMap();
