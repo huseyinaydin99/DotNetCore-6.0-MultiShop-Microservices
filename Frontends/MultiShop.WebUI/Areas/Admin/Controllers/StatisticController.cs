@@ -29,6 +29,10 @@ public class StatisticController : Controller
         var getMaxPriceProductName = await _catalogStatisticService.GetMaxPriceProductName();
         var getMinPriceProductName = await _catalogStatisticService.GetMinPriceProductName();
 
+        var getTotalCommentCount = await _commentService.GetTotalCommentCount();
+        var getActiveCommentCount = await _commentService.GetActiveCommentCount();
+        var getPassiveCommentCount = await _commentService.GetPassiveCommentCount();
+
         ViewBag.getBrandCount = getBrandCount;
         ViewBag.getProductCount = getProductCount;
         ViewBag.getCategoryCount = getCategoryCount;
@@ -37,6 +41,11 @@ public class StatisticController : Controller
 
         ViewBag.getMaxPriceProductName = getMaxPriceProductName;
         ViewBag.getMinPriceProductName = getMinPriceProductName;
+
+        ViewBag.getTotalCommentCount = getTotalCommentCount;
+        ViewBag.getActiveCommentCount = getActiveCommentCount;
+        ViewBag.getPassiveCommentCount = getPassiveCommentCount;
+
         return View();
     }
 }
