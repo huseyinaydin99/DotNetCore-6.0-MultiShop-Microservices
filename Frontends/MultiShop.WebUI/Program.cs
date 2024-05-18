@@ -73,7 +73,7 @@ builder.Services.AddHttpClient<IUserService, UserService>(opt =>
 
 builder.Services.AddHttpClient<ICatalogStatisticService, CatalogStatisticService>(opt =>
 {
-    opt.BaseAddress = new Uri(values.IdentityServerUrl);
+    opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Catalog.Path}");
 }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
 
 builder.Services.AddHttpClient<IUserIdentityService, UserIdentityService>(opt =>
