@@ -2,6 +2,7 @@
 using MultiShop.WebUI.Services.CommentServices;
 using MultiShop.WebUI.Services.StatisticService.CatalogStatisticService;
 using MultiShop.WebUI.Services.StatisticServices.DiscountStatisticServices;
+using MultiShop.WebUI.Services.StatisticServices.MessageStatisticServices;
 using MultiShop.WebUI.Services.StatisticServices.UserStatisticServices;
 
 namespace MultiShop.WebUI.Areas.Admin.Controllers;
@@ -12,13 +13,15 @@ public class StatisticController : Controller
     private readonly ICommentService _commentService;
     private readonly IUserStatisticService _userStatisticService;
     private readonly IDiscountStatisticService _discountStatisticService;
+    private readonly IMessageStatisticService _messageStatisticService;
 
-    public StatisticController(ICatalogStatisticService catalogStatisticService, ICommentService commentService, IUserStatisticService userStatisticService, IDiscountStatisticService discountStatisticService)
+    public StatisticController(ICatalogStatisticService catalogStatisticService, ICommentService commentService, IUserStatisticService userStatisticService, IDiscountStatisticService discountStatisticService, IMessageStatisticService messageStatisticService)
     {
         _catalogStatisticService = catalogStatisticService;
         _commentService = commentService;
         _userStatisticService = userStatisticService;
         _discountStatisticService = discountStatisticService;
+        _messageStatisticService = messageStatisticService;
     }
 
     public async Task<IActionResult> Index()
@@ -38,6 +41,8 @@ public class StatisticController : Controller
 
         var getDiscountCouponCount = await _discountStatisticService.GetDiscountCouponCount();
 
+        var getMessageTotalCount = await _messageStatisticService.GetTotalMessageCount();
+
         ViewBag.getBrandCount = getBrandCount;
         ViewBag.getProductCount = getProductCount;
         ViewBag.getCategoryCount = getCategoryCount;
@@ -52,6 +57,8 @@ public class StatisticController : Controller
         ViewBag.getPassiveCommentCount = getPassiveCommentCount;
 
         ViewBag.getDiscountCouponCount = getDiscountCouponCount;
+
+        ViewBag.getMessageTotalCount = getMessageTotalCount;
 
         return View();
     }
