@@ -105,7 +105,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Message", "Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRRealTime", "SignalRRealTime", "{F3FAECD6-4C59-403E-96AD-C3036F03D868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRReamTimeApi", "Services\SignalRRealTime\SignalRReamTimeApi\SignalRReamTimeApi.csproj", "{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.SignalRReamTimeApi", "Services\SignalRRealTime\SignalRReamTimeApi\MultiShop.SignalRReamTimeApi.csproj", "{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

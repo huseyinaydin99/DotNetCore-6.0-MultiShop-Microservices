@@ -1,5 +1,4 @@
 ﻿<header class="main-header dark-bg">
-
     <!-- Logo -->
     <a href="../index.html" class="logo dark-bg">
         <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -29,7 +28,7 @@
                 <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="icon-envelope"></i>
-                        <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        <div class="notify"> <span class="badge">@ViewBag.messageCount</span> <span class="point"></span> </div>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="header">You have 4 messages</li>
@@ -77,10 +76,10 @@
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="icon-megaphone"></i>
-                        <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                        <div class="notify"> <span class="badge">@ViewBag.totalCommentCount</span> <span class="point"></span> </div>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">Notifications</li>
+                        <li class="header">Son Yorumlar</li>
                         <li>
                             <ul class="menu">
                                 <li><a href="#"><i class="icon-lightbulb"></i> Lorem ipsum dolor sit amet </a> </li>
