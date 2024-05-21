@@ -5,7 +5,7 @@ using MultiShop.SignalRRealTimeApi.Services.SignalRMessageServices;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddHttpClient();
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("CorsPolicy", builder =>
