@@ -18,11 +18,10 @@ public class SignalRHub : Hub
 
     public async Task SendStatisticCount(string id)
     {
-
-        var getTotalCommentCount = _signalRCommentService.GetTotalCommentCount();
+        var getTotalCommentCount = await _signalRCommentService.GetTotalCommentCount();
         await Clients.All.SendAsync("ReceiveCommentCount", getTotalCommentCount);
 
-        var getTotalMessageCount = _signalRMessageService.GetTotalMessageCountByReceiverId(id);
+        var getTotalMessageCount = await _signalRMessageService.GetTotalMessageCountByReceiverId(id);
         await Clients.All.SendAsync("ReceiveMessageCount", getTotalMessageCount);
     }
 }
