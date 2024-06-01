@@ -49,6 +49,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 		..\..\Card.txt = ..\..\Card.txt
 		..\..\Card2.txt = ..\..\Card2.txt
 		..\..\FontAwesomeLink.txt = ..\..\FontAwesomeLink.txt
+		GoogleCloudStorageCodes.txt = GoogleCloudStorageCodes.txt
 		Requirements\IdentityServerVersionErrorSolution.txt = Requirements\IdentityServerVersionErrorSolution.txt
 		..\..\OcelotCodeExample.txt = ..\..\OcelotCodeExample.txt
 		..\..\OcelotLink.txt = ..\..\OcelotLink.txt
@@ -105,7 +106,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Message", "Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRRealTime", "SignalRRealTime", "{F3FAECD6-4C59-403E-96AD-C3036F03D868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.SignalRReamTimeApi", "Services\SignalRRealTime\SignalRReamTimeApi\MultiShop.SignalRReamTimeApi.csproj", "{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.SignalRReamTimeApi", "Services\SignalRRealTime\SignalRReamTimeApi\MultiShop.SignalRReamTimeApi.csproj", "{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Images.WebUI", "Services\Images\MultiShop.Images.WebUI\MultiShop.Images.WebUI.csproj", "{D1646CC8-9DB2-4159-9BE8-2AE8C6D569E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -197,6 +200,10 @@ Global
 		{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1646CC8-9DB2-4159-9BE8-2AE8C6D569E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1646CC8-9DB2-4159-9BE8-2AE8C6D569E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1646CC8-9DB2-4159-9BE8-2AE8C6D569E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1646CC8-9DB2-4159-9BE8-2AE8C6D569E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -237,6 +244,7 @@ Global
 		{BF922DC8-DD77-452F-9E82-6BAC52A241E4} = {5A19C558-E03C-4554-88CC-E354BCE12EB4}
 		{F3FAECD6-4C59-403E-96AD-C3036F03D868} = {F357078E-998E-43F6-9C3A-C5D95C9750AB}
 		{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D} = {F3FAECD6-4C59-403E-96AD-C3036F03D868}
+		{D1646CC8-9DB2-4159-9BE8-2AE8C6D569E9} = {358F1DF7-A5AE-4883-8AFA-6227B50A04DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1818AB1-DE31-40C1-BEFB-1DF430FA4B10}
