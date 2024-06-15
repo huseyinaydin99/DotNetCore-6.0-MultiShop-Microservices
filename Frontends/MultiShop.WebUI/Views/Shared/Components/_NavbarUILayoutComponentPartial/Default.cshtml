@@ -1,4 +1,7 @@
-﻿@model List<ResultCategoryDto>
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer;
+
+
+@model List<ResultCategoryDto>
 <div class="container-fluid bg-dark mb-30">
     <div class="row px-xl-5">
         <div class="col-lg-3 d-none d-lg-block">
@@ -26,10 +29,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="/Default/Index/" class="nav-item nav-link">Ana Sayfa</a>
-                        <a href="shop.html" class="nav-item nav-link">Ürünler</a>
-                        <a href="detail.html" class="nav-item nav-link">Ürün Detayları</a>
-                        <a href="detail.html" class="nav-item nav-link">Günün Fırsatı</a>
+                        <a href="/Default/Index/" class="nav-item nav-link">@localizer["Ana Sayfa"]</a>
+                        <a href="shop.html" class="nav-item nav-link">@localizer["Ürünler"]</a>
+                        <a href="detail.html" class="nav-item nav-link">@localizer["Ürün Detayları"]</a>
+                        <a href="detail.html" class="nav-item nav-link">@localizer["Günün Fırsatı"]</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sayfalar <i class="fa fa-angle-down mt-1"></i></a>
                             <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
