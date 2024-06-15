@@ -1,0 +1,35 @@
+﻿@model ECommerceViewModel.Datum[]
+@{
+    ViewData["Title"] = "ECommerceList";
+}
+<center>
+    <h5>
+    İlk ürünün fiyatı
+    @if (@Model[0].typical_price_range == null)
+    {
+        <p>null olduğu için sorun oluyor. RapidAPI sunucusundan null dönüyor.</p>
+    }
+    else
+    {
+        <p>@Model[0].typical_price_range[0]</p>
+        <p>İndirimli fiyat: @Model[0].offer.price</p>
+    }
+    </h5>
+ <hr />
+@foreach (var item in Model)
+{
+        <hr />
+        <h5>@item.product_title</h5>
+        <h5>
+            @if(item.typical_price_range == null)
+            {
+                <p>null olduğu için sorun oluyor. RapidAPI sunucusundan null dönüyor.</p>
+            }
+            else
+            {
+                <p>@item.typical_price_range[0]</p>
+                <p>@item.offer.price</p>
+            }
+        </h5>
+}
+</center>
