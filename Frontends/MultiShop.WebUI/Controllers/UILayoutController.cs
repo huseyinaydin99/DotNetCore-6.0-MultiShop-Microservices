@@ -1,11 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MultiShop.WebUI.Services.CatalogServices.CategoryServices;
 
 namespace MultiShop.WebUI.Controllers;
 
 public class UILayoutController : Controller
 {
-    public IActionResult _UILayout()
+    private readonly ICategoryService _categoryService;
+
+    public UILayoutController(ICategoryService categoryService)
     {
-        return View();
+        _categoryService = categoryService;
+    }
+
+    public async Task<IViewComponentResult> InvokeAsync()
+    {
+        return null;
+    }
+
+    public async Task<IActionResult> _UILayout()
+    {
+        var values = await _categoryService.GetAllCategoryAsync();
+        return View(values);
     }
 }
