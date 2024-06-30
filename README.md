@@ -1,4 +1,4 @@
-### ASP.NETCORE MİKROSERVİS E-TİCARET PROJESİ
+### ASP.NET CORE MİKROSERVİS E-TİCARET PROJESİ
 Bu projede 3 farklı arayüz kullanıldı. Kullanıcıların girdiği ana arayüz ürünlerin, görüntülenip satın alınabildiği, indirim kuponu tanımlanabildiği, ürünlere yorum yazıldığı, kayıt ve giriş formu bulunan arayüzdür. Admin paneli ise CRUD operasyonlarıyla ürünlerin
 yönetilebildiği, indirim kuponları oluşturulduğu, ürüne gelen yorumların onaylandığı ürün resimlerinin eklenebildiği arayüzdür. Birde kullanıcının profil bilgilerini düzenleyebildiği ek bir arayüz daha vardır.
 ### Teknolojiler;
@@ -52,3 +52,36 @@ Projemde JSON Web Token (JWT) ve JWT Bearer kullanarak güvenli token tabanlı k
 Projemde SignalR kullanarak gerçek zamanlı iletişim sağladım. SignalR, web uygulamalarında sunucu ve istemci arasında iki yönlü iletişimi destekleyen bir teknolojidir. Bu sayede kullanıcılar anlık güncellemeler alabilir ve etkileşimde bulunabilir.
 #### Ajax:
 Projemde Ajax kullanarak, sayfa yenilemeden veri alışverişi ve dinamik içerik güncellemeleri sağladım. Bu yöntemle kullanıcı deneyimini iyileştirirken, arka planda veri alışverişi işlemlerini optimize ettim.
+
+#### Görseller;
+![Ekran görüntüsü 2024-06-30 221151](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/f73cd26e-06ef-457b-81f0-1956f1964551)
+![Ekran görüntüsü 2024-06-30 221011](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/f8f94f32-a2ce-467a-ba93-892ff6c46d84)
+![Ekran görüntüsü 2024-06-30 220845](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/dec82297-fbaf-42b6-b88a-39a8abff7fc2)
+![Ekran görüntüsü 2024-06-30 215221](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/6dea372d-cc67-4d8b-aa76-c6229c7ee345)
+![Ekran görüntüsü 2024-06-30 215102](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/1b27f510-fa1c-42de-802d-f6bf94dc95b7)
+![Ekran görüntüsü 2024-06-30 211927](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/fb216634-5794-49f3-b54e-5650fdfe6bea)
+![Ekran görüntüsü 2024-06-30 202923](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/47e6aa92-f8eb-4606-b937-243478d0a260)
+![Ekran görüntüsü 2024-06-30 202819](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/2eb5e339-b622-4d79-8c7a-a0926460d1ed)
+![Ekran görüntüsü 2024-06-30 193917](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/c788cd11-eb4a-4009-ab99-2330159d6d8b)
+![Ekran görüntüsü 2024-06-30 193824](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/8157500c-7e96-4263-802b-10122cf7926e)
+![Ekran görüntüsü 2024-06-30 193809](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/22baf2e8-2408-4413-a8fa-41431cf5aaf5)
+![Ekran görüntüsü 2024-06-30 193751](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/51b80c61-d556-4cb1-b81b-14ea30c8df60)
+![Ekran görüntüsü 2024-06-30 193735](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/77439647-0d30-41ef-92a8-38107065db81)
+![Ekran görüntüsü 2024-06-30 193720](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/3e353efb-a6a1-4fef-8ff7-555a8528fd35)
+![Ekran görüntüsü 2024-06-30 193704](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/c54032f5-1fde-4a2b-b772-c2610cf48d09)
+![Ekran görüntüsü 2024-06-30 193645](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/7edaa08a-7602-41d0-b392-a19088f1d80b)
+![Ekran görüntüsü 2024-06-30 193631](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/e6258842-75bd-4947-904e-d06f468c1ee4)
+![Ekran görüntüsü 2024-06-30 193553](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/df24f482-3e55-4f9a-b731-bb0fa82fa12c)
+![Ekran görüntüsü 2024-06-30 193014](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/88ea01dd-d28b-48f1-b6f3-d58869b2ae8c)
+![Ekran görüntüsü 2024-06-30 192229](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/56f18b70-27fe-4d14-a6be-5e0563b1fe33)
+![Ekran görüntüsü 2024-06-30 192157](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/4b57dcf3-a417-40c8-9fde-5e536e95ece3)
+![Ekran görüntüsü 2024-06-30 182758](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/02f45dc8-c8fc-4f5f-90d3-94d554fd13b1)
+![Ekran görüntüsü 2024-06-30 182549](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/96f98464-dc9f-4f1a-a44d-47845755954b)
+![Ekran görüntüsü 2024-06-30 145702](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/8412d450-2248-4003-ae74-20c872979472)
+![Ekran görüntüsü 2024-06-30 145527](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/5cdec531-dfa3-48f2-bc82-be3f5618efff)
+![Ekran görüntüsü 2024-06-30 145430](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/3210c43e-b1b3-43c8-ba3a-13429bb4865f)
+![Ekran görüntüsü 2024-06-30 145355](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/2593a93c-109c-4034-8604-d9907a2d745d)
+![Ekran görüntüsü 2024-06-30 143806](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/a3934b0b-4e9f-47e4-a3cc-be15c88cb69d)
+![Ekran görüntüsü 2024-06-30 143750](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/43916843-36d7-44ed-bf5c-1fd8e1daa873)
+![Ekran görüntüsü 2024-06-30 143715](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/9987448a-0f95-4360-9af3-c4114425c58f)
+![Ekran görüntüsü 2024-06-30 143645](https://github.com/huseyinaydin99/DotNetCore-6.0-MultiShop-Microservices/assets/16438043/c2b85053-2a1c-488f-88ee-b39992cbbbd6)
