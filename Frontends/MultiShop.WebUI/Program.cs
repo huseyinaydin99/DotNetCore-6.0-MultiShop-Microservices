@@ -168,7 +168,7 @@ builder.Services.AddHttpClient<IDiscountService, DiscountService>(opt =>
 builder.Services.AddHttpClient<IDiscountStatisticService, DiscountStatisticService>(opt =>
 {
     opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Discount.Path}");
-}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+}).AddHttpMessageHandler<ClientCredentialTokenHandler>();
 
 builder.Services.AddHttpClient<IOrderOderingService, OrderOderingService>(opt =>
 {

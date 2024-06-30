@@ -15,6 +15,10 @@ public class _ShoppingCartProductListComponentPartial : ViewComponent
     public async Task< IViewComponentResult> InvokeAsync()
     {
         var basketTotal = await _basketService.GetBasket();
+        if(basketTotal == null)
+        {
+            return View(null);
+        }
         var basketItems = basketTotal.BasketItems;
         return View(basketItems);
     }

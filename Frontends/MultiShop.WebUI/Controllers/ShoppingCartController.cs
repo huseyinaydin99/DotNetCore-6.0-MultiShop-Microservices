@@ -26,11 +26,20 @@ public class ShoppingCartController : Controller
         ViewBag.directory2 = "Ürünler";
         ViewBag.directory3 = "Sepetim";
         var values = await _basketService.GetBasket();
-        ViewBag.total = values.TotalPrice;
-        var totalPriceWithTax = values.TotalPrice + values.TotalPrice / 100 * 10;
-        var tax = values.TotalPrice / 100 * 10;
-        ViewBag.totalPriceWithTax = totalPriceWithTax;
-        ViewBag.tax = tax;
+        if (values == null)
+        {
+            ViewBag.total = 0;
+            ViewBag.totalPriceWithTax = 0;
+            ViewBag.tax = 0;
+        }
+        else
+        {
+            ViewBag.total = values.TotalPrice;
+            var totalPriceWithTax = values.TotalPrice + values.TotalPrice / 100 * 10;
+            var tax = values.TotalPrice / 100 * 10;
+            ViewBag.totalPriceWithTax = totalPriceWithTax;
+            ViewBag.tax = tax;
+        }
         return View();
     }
 

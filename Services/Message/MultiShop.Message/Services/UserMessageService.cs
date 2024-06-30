@@ -70,7 +70,15 @@ public class UserMessageService : IUserMessageService
 
     public async Task<int> GetTotalMessageCountByReceiverId(string id)
     {
-        var values = await _messageContext.UserMessages.Where(x => x.ReceiverId == id).CountAsync();
-        return values;
+        int values = await _messageContext.UserMessages.Where(x => x.ReceiverId == id).CountAsync();
+        //return values == null ? 0 : values;
+        if(values == null)
+        {
+            return (int)0;
+        }
+        else
+        {
+            return values;
+        }
     }
 }

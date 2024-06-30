@@ -40,6 +40,7 @@ namespace MultiShop.IdentityServer
             new ApiScope("ImageFullPermission","Resim operasyonları için full yetki."),
             new ApiScope("MessageFullPermission","Mesaj operasyonları için full yetki."),
             new ApiScope("OcelotFullPermission","Ocelot APIGateway operasyonları için full yetki."),
+            new ApiScope("CommentFullPermission","Comment APIGateway operasyonları için full yetki."),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -52,7 +53,7 @@ namespace MultiShop.IdentityServer
                 ClientName="Multi Shop Visitor User",
                 AllowedGrantTypes=GrantTypes.ClientCredentials,
                 ClientSecrets={new Secret("multishopsecret".Sha256())},
-                AllowedScopes={"CatalogReadPermission","CatalogFullPermission","OcelotFullPermission","CommentFullPermission","ImageFullPermission", "CommentFullPermission",  IdentityServerConstants.LocalApi.ScopeName },
+                AllowedScopes={"CatalogReadPermission","CatalogFullPermission", "DiscountFullPermission","OcelotFullPermission","CommentFullPermission","ImageFullPermission", "CommentFullPermission",  IdentityServerConstants.LocalApi.ScopeName },
                 AllowAccessTokensViaBrowser=true
             },
 

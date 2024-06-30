@@ -22,10 +22,16 @@ public class BasketService : IBasketService
             }
             else
             {
-                values = new BasketTotalDto();
-                values.BasketItems = new List<BasketItemDto>();
+                /*values = new BasketTotalDto();
+                values.BasketItems = new List<BasketItemDto>();*/
                 values.BasketItems.Add(basketItemDto);
             }
+        }
+        else
+        {
+            values = new BasketTotalDto();
+            values.BasketItems = new List<BasketItemDto>();
+            values.BasketItems.Add(basketItemDto);
         }
         await SaveBasket(values);
     }
@@ -38,8 +44,18 @@ public class BasketService : IBasketService
     public async Task<BasketTotalDto> GetBasket()
     {
         var responseMessage = await _httpClient.GetAsync("baskets");
-        var values = await responseMessage.Content.ReadFromJsonAsync<BasketTotalDto>();
-        return values;
+        if (responseMessage.IsSuccessStatusCode)
+        {
+            var values = await responseMessage.Content.ReadFromJsonAsync<BasketTotalDto>();
+            return values;
+        }
+        return new BasketTotalDto()
+        {
+            BasketItems = new List<BasketItemDto>(),
+            DiscountCode = "",
+            DiscountRate = 0,
+            UserId = ""
+        };
     }
 
     public async Task<bool> RemoveBasketItem(string productId)

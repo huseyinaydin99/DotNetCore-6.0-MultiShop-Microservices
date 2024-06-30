@@ -106,15 +106,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Message", "Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRRealTime", "SignalRRealTime", "{F3FAECD6-4C59-403E-96AD-C3036F03D868}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.SignalRReamTimeApi", "Services\SignalRRealTime\SignalRReamTimeApi\MultiShop.SignalRReamTimeApi.csproj", "{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.SignalRRealTimeApi", "Services\SignalRRealTime\SignalRReamTimeApi\MultiShop.SignalRRealTimeApi.csproj", "{90A42CD8-FFF5-41A3-A3D8-5CE63EAFDE4D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Images.WebUI", "Services\Images\MultiShop.Images.WebUI\MultiShop.Images.WebUI.csproj", "{D1646CC8-9DB2-4159-9BE8-2AE8C6D569E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQMessage", "RabbitMQMessage", "{2A23A8E7-3BFC-4B72-8F08-52FBACCFF52C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.RabbitMQMessageApi", "Services\RabbitMQMessage\MultiShop.RabbitMQMessageApi\MultiShop.RabbitMQMessageApi.csproj", "{D9351199-CFA5-4110-91DE-5A4116FC3FBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.RabbitMQMessageApi", "Services\RabbitMQMessage\MultiShop.RabbitMQMessageApi\MultiShop.RabbitMQMessageApi.csproj", "{D9351199-CFA5-4110-91DE-5A4116FC3FBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.RapidApi", "RapidApi\MultiShop.RapidApi\MultiShop.RapidApi.csproj", "{1A0E4FFC-8006-4212-9530-3195457DFC8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.RapidApi", "RapidApi\MultiShop.RapidApi\MultiShop.RapidApi.csproj", "{1A0E4FFC-8006-4212-9530-3195457DFC8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

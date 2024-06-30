@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MultiShop.WebUI.Services.CommentServices;
 using MultiShop.WebUI.Services.StatisticService.CatalogStatisticService;
 using MultiShop.WebUI.Services.StatisticServices.DiscountStatisticServices;
@@ -7,6 +8,8 @@ using MultiShop.WebUI.Services.StatisticServices.UserStatisticServices;
 
 namespace MultiShop.WebUI.Areas.Admin.Controllers;
 
+[Area("Admin")]
+[AllowAnonymous]
 public class StatisticController : Controller
 {
     private readonly ICatalogStatisticService _catalogStatisticService;
